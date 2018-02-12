@@ -1,0 +1,30 @@
+{
+    "name": "adelphia/coinconect",
+    "description": "Easy Crypto Currency API RPC-JSON Node daemon",
+    "authors": [
+        {
+            "name": "adelphia",
+            "email": "billyorigin@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+
+    "autoload": {
+        "psr-4": {
+            "Adelphia\\Coinconnect\\": "src"
+        }
+    },
+
+    "extra": {
+    "laravel": {
+        "providers": [
+            "Adelphia\\Coinconnect\\CoinconnectServiceProvider"
+        ],
+        "aliases": {
+            "Bitcoinode": "Adelphia\\Coinconnect\\CoinconnectFacades"
+        }
+    }
+}
+
+}
